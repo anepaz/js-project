@@ -1,5 +1,5 @@
 body {
-  background-color: #E9CEFF;
+  background-color: #ECD5BB;
   height: 100vh;
   margin: 0;
   padding: 0;
@@ -7,7 +7,7 @@ body {
   font-family: sans-serif;
 }
 
-.container {
+#container {
   display: flex;
   text-align: center;
   justify-content: center;
@@ -16,7 +16,8 @@ body {
 }
 
 .box {
-  background-color: #F3E5FF;
+  background-color: #54627B;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .profile-pic {
@@ -26,4 +27,9 @@ body {
 
 .text-content {
   font-size: 18px;
+  color: #f2f2f2;
+}
+
+.title {
+  color: #E3E5E4;
 }
