@@ -1,6 +1,7 @@
 body {
   background-color: #ECD5BB;
   height: 100vh;
+  overflow: hidden;
   margin: 0;
   padding: 0;
   color: black;
@@ -15,27 +16,9 @@ body {
   height: 100%;
 }
 
-#toggle {
-  position: relative;
-  font-weight: bold;
-  margin-bottom: 20px;
-  background-color: #ECD5BB;
-  color: blue;
-  border: none;
-  border-radius: 2px;
-  padding: 10px;
-  cursor: pointer;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
-}
-
-#toggle.active {
-  background-color: #d6e1ff;
-  color: black;
-}
-
 .box {
   background-color: #54627B;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px 2px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .profile-pic {
@@ -49,6 +32,30 @@ body {
   line-height: 12px;
 }
 
-.title {
+#toggle {
+  position: relative;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #ECD5BB;
+  color: blue;
+  border: none;
+  border-radius: 2px;
+  padding: 10px;
+  cursor: pointer;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+#toggle.active {
+  background-color: #d6e1ff;
+  color: black;
+}
+
+.title-prof {
   color: #E3E5E4;
+}
+
+#text {
+  line-height: 10px;
+  color: white;
 }
