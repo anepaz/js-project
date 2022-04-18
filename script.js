@@ -4,13 +4,15 @@ toggle.onclick = function(){
   toggle.classList.toggle('active')
 }
 
-let infoBtn = document.getElementById('info');
+let infoBtn = document.getElementById('infoBtn');
 
 infoBtn.onclick = function(){
   infoBtn.classList.toggle('active')
 }
 
-info.addEventListener('click', function(){
+infoBtn.addEventListener('click', addInfo);
+
+function addInfo() {
 
   let elementoPai = document.getElementById('text');
 
@@ -22,4 +24,14 @@ info.addEventListener('click', function(){
   p.textContent = "Parágrafo com a descrição do perfil"
   elementoPai.appendChild(p);
 
-});
+  infoBtn.removeEventListener('click', addInfo);
+
+}
+
+function remove() {
+  let elementoPai = document.getElementById('text');
+  elementoPai.innerHTML = "";
+
+  infoBtn.addEventListener('click', addInfo);
+
+}

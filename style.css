@@ -30,7 +30,8 @@ body {
   line-height: 12px;
 }
 
-#toggle {
+#toggle,
+#infoBtn {
   position: relative;
   font-weight: bold;
   margin: 10px;
@@ -43,27 +44,23 @@ body {
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
 }
 
-#toggle.active {
+#toggle.active,
+#infoBtn.active {
   background-color: #d6e1ff;
   color: black;
 }
 
-#info {
+#deleteBtn {
   position: relative;
   font-weight: bold;
   margin: 10px;
-  background-color: #ECD5BB;
-  color: blue;
+  background-color: red;
+  color: white;
   border: none;
   border-radius: 2px;
   padding: 10px;
   cursor: pointer;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
-}
-
-#info.active {
-  background-color: #d6e1ff;
-  color: black;
 }
 
 .title-prof {
