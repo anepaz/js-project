@@ -35,6 +35,3 @@ function remove() {
   infoBtn.addEventListener('click', addInfo);
 
 }
-
-let imgFade = document.querySelector('imgFade');
-imgFade.classList.add("imgFade");
