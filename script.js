@@ -53,5 +53,7 @@ async function sendApiRequest() {
 function getRandom(gifs){
 
   let gifHere = document.querySelector('#giphy');
-  gifHere.innerHTML = `<img src= ${gifs.data.images.original.url}>`;
+  gifHere.innerHTML = `<img src= ${gifs.data.images.original.url}'">`;
 }
+
+sendApiRequest();
