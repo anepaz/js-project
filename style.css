@@ -22,8 +22,8 @@ body {
 }
 
 .profile-pic {
-  height: 200px;
-  width: 330px;
+  height: 230px;
+  width: 100%;
 }
 
 .text-content {
@@ -31,7 +31,7 @@ body {
   line-height: 12px;
 }
 
-#toggle, #infoBtn {
+#toggle, #infoBtn, #randomGif {
   position: relative;
   font-weight: bold;
   margin: 10px;
@@ -80,15 +80,25 @@ body {
 
 .imgFade {
   height: 170px;
-  width: 300px;
+  width: 100%;
   opacity: 0;
   transition: opacity 2s;
 }
 
-.wrapper img {
+.wrapper {
+  display: flex;
+  margin-top: 19em;
   margin-left: 35px;
+  width: 35em;
+  justify-content: center;
+}
+
+.wrapper img {
+
   animation: 3s ease-in slideIn;
   background: #54627B;
+  overflow: hidden;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px 2px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 @keyframes slideIn {

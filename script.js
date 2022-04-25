@@ -35,3 +35,23 @@ function remove() {
   infoBtn.addEventListener('click', addInfo);
 
 }
+
+let apikey = "75m1CAZPAs7hcx4ME7adWzWRHVA8vR9S";
+let randomGif = document.querySelector('#randomGif');
+randomGif.addEventListener('click', ()=>{
+  sendApiRequest();
+})
+
+async function sendApiRequest() {
+  let response = await fetch(`https://api.giphy.com/v1/gifs/random?api_key=${apikey}`);
+  console.log(response);
+  let gifs = await response.json();
+  console.log(gifs);
+  getRandom(gifs);
+};
+
+function getRandom(gifs){
+
+  let gifHere = document.querySelector('#giphy');
+  gifHere.innerHTML = `<img src= ${gifs.data.images.original.url}>`;
+}
