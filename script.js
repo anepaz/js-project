@@ -44,9 +44,7 @@ randomGif.addEventListener('click', ()=>{
 
 async function sendApiRequest() {
   let response = await fetch(`https://api.giphy.com/v1/gifs/random?api_key=${apikey}`);
-  console.log(response);
   let gifs = await response.json();
-  console.log(gifs);
   getRandom(gifs);
 };
 
