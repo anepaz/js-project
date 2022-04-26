@@ -52,8 +52,6 @@ async function sendApiRequest() {
 
 function getRandom(gifs){
 
-  let gifHere = document.querySelector('#giphy');
+  let gifHere = document.querySelector('#giphy-wrapper, .giphy, .img');
   gifHere.innerHTML = `<img src= ${gifs.data.images.original.url}'">`;
 }
-
-sendApiRequest();

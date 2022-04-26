@@ -10,7 +10,6 @@ body {
 #container {
   display: flex;
   text-align: center;
-  justify-content: left;
   align-items: center;
   margin-left: 35px;
   height: 100%;
@@ -87,14 +86,14 @@ body {
 
 .wrapper {
   display: flex;
-  margin-top: 19em;
   margin-left: 35px;
   width: 35em;
   justify-content: center;
+  position: absolute;
+  bottom: 51%;
 }
 
 .wrapper img {
-
   animation: 3s ease-in slideIn;
   background: #54627B;
   overflow: hidden;
@@ -112,3 +111,16 @@ body {
     right: 0;
   }
 }
+
+.image-grid {
+  padding: 10px;
+}
+
+#giphy-wrapper {
+  position: absolute;
+}
+
+#giphy-wrapper, .giphy img{
+  margin-left: 35px;
+}
+
