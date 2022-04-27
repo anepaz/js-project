@@ -36,14 +36,14 @@ function remove() {
 
 }
 
-let apikey = "75m1CAZPAs7hcx4ME7adWzWRHVA8vR9S";
+let apiKey = "75m1CAZPAs7hcx4ME7adWzWRHVA8vR9S";
 let randomGif = document.querySelector('#randomGif');
 randomGif.addEventListener('click', ()=>{
   sendApiRequest();
 })
 
 async function sendApiRequest() {
-  let response = await fetch(`https://api.giphy.com/v1/gifs/random?api_key=${apikey}`);
+  let response = await fetch(`https://api.giphy.com/v1/gifs/random?api_key=${apiKey}`);
   let gifs = await response.json();
   getRandom(gifs);
 };
@@ -51,5 +51,5 @@ async function sendApiRequest() {
 function getRandom(gifs){
 
   let gifHere = document.querySelector('#giphy-wrapper, .giphy, .img');
-  gifHere.innerHTML = `<img src= ${gifs.data.images.original.url}'">`;
+  gifHere.innerHTML = `<img src= ${gifs.data.images.original.url}'>`;
 }
