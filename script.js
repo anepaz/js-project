@@ -36,7 +36,7 @@ function remove() {
 
 }
 
-let apiKey = "75m1CAZPAs7hcx4ME7adWzWRHVA8vR9S";
+let apiKey = '75m1CAZPAs7hcx4ME7adWzWRHVA8vR9S';
 let randomGif = document.querySelector('#randomGif');
 randomGif.addEventListener('click', ()=>{
   sendApiRequest();
@@ -52,4 +52,30 @@ function getRandom(gifs){
 
   let gifHere = document.querySelector('#giphy-wrapper, .giphy, .img');
   gifHere.innerHTML = `<img src= ${gifs.data.images.original.url}'>`;
+}
+
+function apiRequest() {
+  let userInput = document.getElementById('input').value;
+
+  let giphyApiKey = '75m1CAZPAs7hcx4ME7adWzWRHVA8vR9S';
+  let giphyApiUrl = `https://api.giphy.com/v1/gifs/search?q=${userInput}&rating=pg-13&limit=15&api_key=${giphyApiKey}`;
+
+  fetch(giphyApiUrl).then(function(data) {
+    return data.json()
+  })
+  .then(function(json) {
+
+    let boxResults = document.querySelector('.results');
+
+    for (var i = 0; i < json.data.length; i++) {
+
+      let imgPath = json.data[i].images.fixed_height.url;
+      let img = document.createElement('img');
+      img.setAttribute('src', imgPath);
+
+      boxResults.appendChild(img);
+      img.classList.add('result-images');
+    }  
+    document.querySelector('#input').value = '';  
+  })
 }
