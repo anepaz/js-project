@@ -17,11 +17,11 @@ function addInfo() {
   let elementoPai = document.getElementById('text');
 
   let title = document.createElement('h2');
-  title.textContent = "Descrição"
+  title.textContent = 'Descrição'
   elementoPai.appendChild(title);
 
   let p = document.createElement('p');
-  p.textContent = "Parágrafo com a descrição do perfil"
+  p.textContent = 'Parágrafo com a descrição do perfil'
   elementoPai.appendChild(p);
 
   infoBtn.removeEventListener('click', addInfo);
@@ -65,9 +65,14 @@ function apiRequest() {
   })
   .then(function(json) {
 
-    let boxResults = document.querySelector('.results');
+    let boxResults = document.querySelector('#boxResults');
+    let imgElements = document.querySelectorAll('#boxResults img');
 
-    for (var i = 0; i < json.data.length; i++) {
+    imgElements.forEach(img => {
+      img.remove();
+    });
+
+    for (let i = 0; i < json.data.length; i++) {
 
       let imgPath = json.data[i].images.fixed_height.url;
       let img = document.createElement('img');
@@ -75,7 +80,9 @@ function apiRequest() {
 
       boxResults.appendChild(img);
       img.classList.add('result-images');
+
     }  
-    document.querySelector('#input').value = '';  
+
   })
+
 }
