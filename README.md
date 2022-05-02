@@ -1,10 +1,10 @@
-### Projeto JS
-
-### Preview
-![readmepreviewjsproject](https://user-images.githubusercontent.com/86319685/166292042-e1ecf782-90d6-4835-8af7-328846e9e060.gif)
+## Projeto JS
 ### Descrição
 
 Projeto para estudar e fundamentar os conhecimentos em Javascript ES6 e até mesmo de HTML e CSS.
+
+### Preview
+![readmepreviewjsproject](https://user-images.githubusercontent.com/86319685/166292042-e1ecf782-90d6-4835-8af7-328846e9e060.gif)
 
 ### Como rodar
 
@@ -22,9 +22,9 @@ Botões toggle, add e remove classe.
 Fade in de imagem.
 
 ### Linguagens
-Javascript Vanilla
-HTML5
-CSS3
+- Javascript Vanilla
+- HTML5
+- CSS3
 
 ### Ferramentas
 Sublime Text 3
