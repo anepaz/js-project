@@ -84,10 +84,9 @@ body {
   align-items: center;
 }
 
-input[type='text'] {
+input[type='search'] {
   width: 230px;
-  height: 20px;
-  padding: 6px;
+  padding: 10px;
   border-radius: 5px;
   border-style: none;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
@@ -99,7 +98,6 @@ input[type='text'] {
   border-radius: 5px;
   border-style: none;
   padding: 10px;
-  height: 30px;
   color: white;
   font-weight: bold;
   background-color: #B88F67;
@@ -185,4 +183,11 @@ input[type='text'] {
   width: 100%;
   object-fit: cover;
   padding-top: 40px;
+}
+
+.error-message {
+  width: 200px;
+  margin: 30px;
+  font-size: 16px;
+  color: red;
 }
