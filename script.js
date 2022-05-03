@@ -91,15 +91,15 @@ function apiRequest() {
 
     let arr = json.data;
 
-    let removeP = document.querySelector('.error-message');
-    
+    let removeP = document.getElementById('error-message');
+
     if (removeP)
       boxResults.removeChild(removeP);
 
     if (arr.length === 0) { 
       let errorMsg = document.createElement('p');
       errorMsg.innerHTML = 'Nenhum gif encontrado';
-      errorMsg.classList.add('error-message');
+      errorMsg.setAttribute('id', 'error-message');
       boxResults.appendChild(errorMsg);
     }
 
