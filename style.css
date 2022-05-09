@@ -15,6 +15,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    overflow-x: hidden;
   }
 
   .box {
@@ -33,18 +34,18 @@
   }
 
   h1, h2 {
-    font-size: 24px;
+    font-size: 1.5em;
     color: #E3E5E4;
   }
 
   p {
-    font-size: 16px;
+    font-size: 1em;
   }
 
   #toggle, #infoBtn, #randomGif {
     position: relative;
     font-weight: bold;
-    margin: 10px;
+    margin: 1em;
     background-color: #ECD5BB;
     color: blue;
     border: none;
@@ -62,12 +63,12 @@
   #deleteBtn {
     position: relative;
     font-weight: bold;
-    margin: 10px;
+    margin: 0.625em;
     background-color: red;
     color: white;
     border: none;
     border-radius: 2px;
-    padding: 10px;
+    padding: 0.625em;
     cursor: pointer;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
   }
@@ -80,8 +81,8 @@
   }
 
   input[type='search'] {
-    width: 230px;
-    padding: 10px;
+    width: 14em;
+    padding: 0.625em;
     border-radius: 5px;
     border-style: none;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
@@ -92,7 +93,7 @@
     align-items: center;
     border-radius: 5px;
     border-style: none;
-    padding: 10px;
+    padding: 0.625em;
     color: white;
     font-weight: bold;
     background-color: #B88F67;
@@ -147,14 +148,14 @@
   #error-message {
     width: 15em;
     margin-top: 4em;
-    font-size: 16px;
+    font-size: 1em;
     color: red;
   }
 
   .results {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: 100px;
+    grid-auto-rows: 6.25em;
     gap: 3px;
     border: 1px solid black;
     width: 21em;
@@ -165,7 +166,7 @@
 
   .results h2 {
     color: black;
-    font-size: 18px;
+    font-size: 1em;
     position: absolute;
   }
 
@@ -173,5 +174,5 @@
     height: 100%;
     max-width: 100%;
     object-fit: cover;
-    padding-top: 40px;
+    padding-top: 2.5em;
   }
