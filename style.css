@@ -343,7 +343,6 @@ input[type='search'] {
     color: red;
   }
 
-
 }
 
 @media screen and (min-width: 1350px) {
@@ -465,3 +464,4 @@ input[type='search'] {
     font-size: 16px;
     color: red;
   }
+}
