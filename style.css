@@ -316,9 +316,7 @@ input[type='search'] {
     justify-content: center;
     border: 1px solid black;
     float: bottom;
-    bottom: 0;
-    position: absolute;
-    margin-bottom: -35em;
+    position: relative;
     margin-left: 26.4em;
   }
 
