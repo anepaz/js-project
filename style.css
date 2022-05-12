@@ -354,7 +354,6 @@ input[type='search'] {
     padding: 0;
     color: white;
     font-family: sans-serif;
-    overflow: hidden;
   }
 
   #container {
@@ -380,7 +379,7 @@ input[type='search'] {
   }
 
   .text-content {
-    line-height: 0.8em;
+    line-height: 0.5em;
   }
 
   .imgFade {
@@ -442,7 +441,7 @@ input[type='search'] {
     top: 0;
     right: 1em;
     position: absolute;
-    padding-left: 0;
+    padding-left: 1em;
   }
 
   .results h2 {
