@@ -328,6 +328,7 @@ input[type='search'] {
     font-size: 18px;
     margin-top: 0;
     position: absolute;
+    padding: 1em;
   }
 
   .result-images {
@@ -449,6 +450,7 @@ input[type='search'] {
     font-size: 18px;
     margin-top: 0;
     position: absolute;
+    padding: 1em;
   }
 
   .result-images {
