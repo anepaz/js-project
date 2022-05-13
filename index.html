@@ -10,39 +10,32 @@
 
 </head>
 <body>
+ <div id="container">
 
-  <div id="container">
-    <div class="box">
-      <img src="img/profile.jpg" alt="Foto de perfil de Anelise" class="profile-pic">
-      <div class="text-content">
-        <h1 class="title-prof">Perfil</h1>
-        <p>Anelise</p>
-        <p>26 anos</p>
-        <p>19/05/1995</p>
-      </div>
-
-      <div class="buttons">
-        <button id="toggle">Toggle</button>
-        <button id="randomGif">Mostrar gif</button>
-        <button id="infoBtn">Info</button>
-        <button id="deleteBtn" onclick="remove()">Deletar Info</button>
-
-        <div id="text"></div>
-      </div>
-
-      <div class="search-box">
-        <input id="input" type="search"><button class="search-btn" onclick="apiRequest()">Pesquisar gifs</button>
-      </div>
-
-      <div id="photo">
-        <img src="img/photo-1.jpg" alt="Mist rises over the forest in Banff National Park Alberta Canada" onload="this.style.opacity = '1'" class="imgFade">
-      </div>
-
+  <div class="box column">
+    <img src="img/profile.jpg" alt="Foto de perfil de Anelise" class="profile-pic">
+    <div class="text-content">
+      <h1 class="title-prof">Perfil</h1>
+      <p>Anelise</p>
+      <p>26 anos</p>
+      <p>19/05/1995</p>
     </div>
-
+    <div class="buttons">
+      <button id="toggle">Toggle</button>
+      <button id="randomGif">Mostrar gif</button>
+      <button id="infoBtn">Info</button>
+      <button id="deleteBtn" onclick="remove()">Deletar Info</button>
+      <div id="text"></div>
+    </div>
+    <div class="search-box">
+      <input id="input" type="search"><button class="search-btn" onclick="apiRequest()">Pesquisar gifs</button>
+    </div>
+    <div id="photo">
+      <img src="img/photo-1.jpg" alt="Mist rises over the forest in Banff National Park Alberta Canada" onload="this.style.opacity = '1'" class="imgFade">
+    </div>
   </div>
 
-  <div id="image-grid">
+  <div id="image-grid" class="column">
 
     <div class="wrapper">
       <img src="img/photo-2.jpg" alt="People doing trekking on a field">
@@ -52,12 +45,13 @@
       <div class="giphy"></div>
     </div>
 
+    <div class="results column" id="boxResults">
+      <h2>Mostrar gifs pesquisados aqui!</h2>
+    </div>
+
   </div>
 
-  <div class="results" id="boxResults">
-    <h2>Mostrar gifs pesquisados aqui!</h2>
-  </div>
-
+</div>
 </div>
 
 </body>
