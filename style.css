@@ -239,7 +239,6 @@ input[type='search'] {
   }
 
   .column {
-    float: left;
     padding: 10px;
   }
 
@@ -272,7 +271,7 @@ input[type='search'] {
     display: flex;
     flex-direction: column;
     position: relative;
-    height: 100vh;
+    height: 42em;
   }
 
   .wrapper {
@@ -369,7 +368,6 @@ input[type='search'] {
   }
 
   .column {
-    float: left;
     padding: 0.6em;
   }
 
@@ -402,8 +400,7 @@ input[type='search'] {
     display: flex;
     flex-direction: column;
     position: relative;
-    top: 2em;
-    height: 100vh;
+    height: 42em;
   }
 
   .wrapper {
