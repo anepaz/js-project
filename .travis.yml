@@ -4,6 +4,9 @@ node_js:
   - node
 install:
   - npm install
+branches:
+  only:
+    - main
 script: 'true'
 deploy:
   provider: heroku
